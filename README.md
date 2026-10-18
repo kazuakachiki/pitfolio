@@ -1,2 +1,2 @@
-# garage-log-site
-Official website for Garage Log
+# Pitfolio
+Official website for Pitfolio
