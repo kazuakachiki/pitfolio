@@ -4,116 +4,186 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy | Garage Log</title>
+  <meta name="theme-color" content="#0b1018">
+  <title>Privacy Policy | Pitfolio</title>
   <style>
     :root {
       color-scheme: dark;
-      --bg: #0b101a;
-      --card: #151d2b;
-      --text: #f1f5fb;
-      --muted: #a2aec1;
-      --accent: #4285ff;
+      --bg: #0b1018;
+      --panel: #151d29;
+      --border: #29374a;
+      --text: #f1f5fa;
+      --muted: #a4b1c2;
+      --blue: #4b9fff;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.8;
+      font: 16px/1.8 -apple-system, BlinkMacSystemFont,
+            "Segoe UI", sans-serif;
     }
-    main { max-width: 850px; margin: auto; padding: 56px 22px; }
-    .brand { font-size: 15px; font-weight: 700; color: var(--accent); }
-    h1 { font-size: clamp(32px, 6vw, 48px); line-height: 1.2; margin: 12px 0; }
-    h2 { font-size: 22px; margin-top: 36px; }
+    a { color: var(--blue); }
+    .container {
+      width: min(100% - 40px, 820px);
+      margin: 0 auto;
+    }
+    header {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .links { display: flex; gap: 20px; }
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+    }
+    main { padding: 55px 0 80px; }
+    h1 { font-size: 38px; margin: 0 0 8px; }
+    h2 { font-size: 21px; margin-top: 36px; }
     p, li { color: var(--muted); }
-    a { color: #82adff; }
-    nav { display: flex; gap: 20px; margin: 25px 0 40px; }
-    footer { border-top: 1px solid #273247; margin-top: 55px; padding-top: 20px; }
+    .date { color: var(--blue); font-size: 14px; }
+    .notice {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      margin: 28px 0;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
-  <main>
-    <div class="brand">GARAGE LOG</div>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="./">Pitfolio</a>
+        <div class="links">
+          <a href="./">Home</a>
+          <a href="support.html">Support</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
     <h1>Privacy Policy</h1>
-    <p>Last updated: October 17, 2026</p>
+    <p class="date">Last updated: October 17, 2026</p>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="support.html">Support</a>
-    </nav>
+    <div class="notice">
+      Pitfolio is designed to work offline.
+      Your vehicle records are stored locally on
+      your device and are not uploaded to a
+      developer-operated server.
+    </div>
 
-    <h2>1. Overview</h2>
+    <h2>1. Information You Enter</h2>
     <p>
-      Garage Log is an offline vehicle journal application designed
-      to help users manage vehicle maintenance, modifications,
-      vehicle setups, and track-day records.
+      Pitfolio allows you to enter vehicle details,
+      mileage, maintenance records, parts,
+      modifications, setup values, track sessions,
+      lap times, and related information.
+      These records are stored locally on your device.
     </p>
 
-    <h2>2. Information We Collect</h2>
+    <h2>2. Data Collection</h2>
     <p>
-      Garage Log does not require account registration and does not
-      collect personal information through developer-operated servers.
-      The application does not include advertising, analytics,
-      or third-party tracking SDKs.
+      Pitfolio does not require an account and does not
+      collect personal information or vehicle records
+      through a developer-operated server.
+      The app does not include advertising, analytics,
+      or tracking SDKs.
     </p>
 
-    <h2>3. Data Stored on Your Device</h2>
+    <h2>3. Network Access</h2>
     <p>
-      Vehicle information, maintenance records, parts records,
-      setup information, and track-day records are stored locally
-      on your device. The developer does not have access to
-      these records.
+      The core features of Pitfolio do not require
+      an internet connection. The app does not
+      automatically transmit your vehicle records
+      to the developer.
     </p>
 
-    <h2>4. Backup and Data Sharing</h2>
+    <h2>4. Backup and Restore</h2>
     <p>
-      Garage Log provides user-initiated backup and restore features.
-      If you export or share a backup file, its destination and
-      handling depend on the storage location or third-party service
-      you choose. Garage Log does not automatically upload your
-      vehicle records to developer-operated servers.
+      Pitfolio provides user-initiated backup export
+      and restore functionality. When you export a
+      backup, you choose where to save or share it
+      using the options provided by your device.
+    </p>
+    <p>
+      If you save a backup to a cloud storage provider
+      or share it with another service, that provider's
+      privacy practices and terms may apply.
     </p>
 
-    <h2>5. Internet Connection</h2>
+    <h2>5. Data Retention and Deletion</h2>
     <p>
-      Garage Log's core functions work without an internet connection.
-      The application does not require an account or cloud service
-      to manage your records.
+      Vehicle records remain on your device until
+      you modify or delete them, restore different
+      data, or remove the app and its local data.
+      Deleting the app generally removes its locally
+      stored data, subject to device backup and
+      operating system behavior.
+    </p>
+    <p>
+      Exported backups are separate files and are
+      not automatically deleted when you uninstall
+      Pitfolio.
     </p>
 
-    <h2>6. Data Retention and Deletion</h2>
+    <h2>6. Third-Party Services</h2>
     <p>
-      Your records remain on your device until you edit or remove
-      them, restore another backup, or uninstall the application.
-      Backup copies exported outside the application must be
-      managed and deleted separately.
+      Pitfolio does not use third-party advertising
+      or analytics services. Device operating system
+      services may be used when you choose to export,
+      save, share, or import files.
     </p>
 
     <h2>7. Children's Privacy</h2>
     <p>
-      Garage Log is not specifically designed for children and
-      does not knowingly collect personal information from children.
+      Pitfolio is not designed to collect information
+      from children. No account registration or
+      developer-operated data collection is required.
     </p>
 
     <h2>8. Changes to This Policy</h2>
     <p>
-      This policy may be updated when the application's functionality
-      or data-handling practices change. The latest version will
-      be published on this page.
+      This Privacy Policy may be updated to reflect
+      changes to Pitfolio or applicable requirements.
+      The latest version will be published on this page.
     </p>
 
     <h2>9. Contact</h2>
     <p>
-      For privacy questions, please visit the
-      <a href="support.html">Garage Log Support page</a>.
+      For privacy-related questions, please visit
+      <a href="support.html">Pitfolio Support</a>.
     </p>
-
-    <footer>
-      <a href="index.html">Home</a> ·
-      <a href="support.html">Support</a>
-      <p>© 2026 Garage Log</p>
-    </footer>
   </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Pitfolio ·
+      <a href="./">Home</a> ·
+      <a href="support.html">Support</a>
+    </div>
+  </footer>
 </body>
 </html>
